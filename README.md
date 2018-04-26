@@ -1,2 +1,1 @@
-# whale
-SLB
+raft implementation
