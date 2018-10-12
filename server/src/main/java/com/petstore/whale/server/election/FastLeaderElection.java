@@ -14,6 +14,7 @@ public class FastLeaderElection implements Election {
     @Override
     public void lookForLeader() {
         while (peer.getPeerState() == QuorumPeer.ServerState.LOOKING && !stop) {
+
         }
     }
 }

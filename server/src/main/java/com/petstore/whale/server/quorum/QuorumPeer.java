@@ -1,5 +1,7 @@
 package com.petstore.whale.server.quorum;
 
+import java.net.InetSocketAddress;
+
 public class QuorumPeer {
 
     private volatile ServerState state = ServerState.LOOKING;
@@ -15,4 +17,12 @@ public class QuorumPeer {
     public enum ServerState {
         LOOKING, LEADING, FOLLOWING
     }
+
+    public class QuorumServer {
+        public long sid;
+        public InetSocketAddress electionAddr;
+        public InetSocketAddress addr;
+    }
+
+
 }
